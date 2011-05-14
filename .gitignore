@@ -1,0 +1,6 @@
+.class
+.jar
+target/
+lib_managed/
+project/boot/
+
