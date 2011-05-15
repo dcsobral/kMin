@@ -3,8 +3,7 @@ object KMin {
       def select(n2: Int) = n2 match {
         case `n` => a2(n - 1)
         case 0   => a1(n - 1)
-        case _   => if (n % 2 == 1) a1(n - n2 - 1) max a2(n2 - 1)
-                    else            a1(n - n2 - 1) min a2(n2 - 1)
+        case _   => a1(n - n2 - 1) max a2(n2 - 1)
       }
       
       def recurse(top: Int, bottom: Int): Int = {
